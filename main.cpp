@@ -1,8 +1,9 @@
 #include <SFML/Graphics.hpp>
-
+using namespace sf;
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(200, 200), "Take it to the top", sf::Style::Close | sf::Style::Titlebar | Style::Resize);
+    window.setVerticalSyncEnabled(true); 
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
 
